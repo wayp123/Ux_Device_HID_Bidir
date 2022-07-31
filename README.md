@@ -2,7 +2,7 @@
 
 STM32 project that can send and receive 3 bytes via joystick HID using NUCLEO-F767ZI  board, AZURE USBX, STM32CubeIDE and a PC.
 
-STM32 Ux_Device_Hid project that was a Mouse Hid using B1 (button1 on dev board) was transformed into Ux_Device_Hid_Bidir, still using B1 to send test data, but now set as a joystick to work with USB2550HidTest c# PC app. The app shows received data, and sends data via its Button1, which is reflected back to the app. If press send button too quickly can crash board, just reset (there is no send complete event yet) The main app file is ux_device_mouse.c
+STM32 Ux_Device_Hid project that was a Mouse Hid using B1 (button1 on dev board) was transformed into Ux_Device_Hid_Bidir, still using B1 (blue) to send test data, but now set as a joystick to work with USB2550HidTest c# PC app. The app shows received data, and sends data via its Button1, which is reflected back to the app. If press send button too quickly can crash board, just reset (B2 black) (there is no send complete event yet in c#) The main app file is ux_device_mouse.c
 
 some Help to transform the app came from
 https://en-support.renesas.com/knowledgeBase/18553243
